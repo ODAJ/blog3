@@ -25,6 +25,7 @@
 
 .user-name a {
   font-weight: 600;
+  
 }
 
 .user-name a:hover {
@@ -51,6 +52,7 @@
 
 .user {
   margin-bottom: 20px;
+  color: white;
 }
 
 .user img {
@@ -66,6 +68,7 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 1.2;
+  color: white;
 }
 
 .user p {
@@ -77,6 +80,7 @@
   color: #8899a6;
   text-decoration: underline;
   font-weight: 200;
+  color: white;
 }
 
 .user span {
@@ -87,21 +91,22 @@
 
 .user-tabs {
   margin-top: 40px;
-  background-color: white;
+  color: white;
   overflow: hidden;
   box-shadow: 0 2px 6px #c1ced7;
 }
 
 .user-tabs li {
   float: left;
+  
 }
 
 .user-tabs li.active {
-  border-bottom: 2px solid #3ecdc6;
+  border-bottom: 2px solid #039cf5;
 }
 
 .user-tabs li.active a {
-  color: #57575f;
+  color:white;
 }
 
 .user-tabs a {

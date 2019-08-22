@@ -8,9 +8,11 @@
             <%= @error_message %>
           </div>
         <% end %>
-        <%= form_with(url: "/login",local: true) do |form| %>
+
+        <%= form_tag("/login") do %>
           <p>メールアドレス</p>
           <input name="email" value="<%= @email %>">
+          
           <p>パスワード</p>
           <input type="password" name="password" value="<%= @password %>">
           <input type="submit" value="ログイン">

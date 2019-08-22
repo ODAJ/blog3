@@ -9,11 +9,13 @@
           </div>
         <% end %>
         
-        <%= form_with(url: '/users/create', ) do |form| %>
-          <p>名前</p>
-          <input type="text" name="name" value="<%= @user.name %>">
+        <%= form_tag("/users/create") do %>
+          <p>ユーザー名</p>
+          <input name="name" value="<%= @user.name %>">
           <p>メールアドレス</p>
-          <input type="email" name="email" value="<%= @user.email %>">
+          <input name="email" value="<%= @user.email %>">
+           <p>画像</p>
+          <input name="image" type="file">
           <p>パスワード</p>
           <input type="password" name="password" value="<%= @user.password %>">
           <input type="submit" value="新規登録">
